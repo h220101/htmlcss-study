@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스로간단하게꾸미기</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to right, #43c5df, #c9ebf2);
+    }
+    .btn {
+      position: relative;
+      display: inline-block;
+      font-size: 22px;
+      padding: 20px 60px;
+      color: #43c5df;
+      border-radius: 6px;
+      text-align: center;
+      transition: top .01s linear;
+      cursor: pointer;
+      text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    }
+    .btn.hello:hover  { 
+        background-color: #b4ccd1;
+        color: white;
+    }
+    .btn:active {
+      top: 8.5px;
+    }
+    .btn.hello {
+      background-color: #c9ebf2;
+      box-shadow: 
+            0 0 0 1px #c9ebf2 inset,
+            0 0 0 2px rgba(255,255,255, 0.15) inset,
+            0 8px 0 0 rgba(126, 149, 194, 0.7),
+            0 8px 0 1px rgba(0,0,0, 0.4),
+            0 8px 8px 1px rgba(0,0,0, 0.6);
+    }
+    .btn.hello:active {
+      box-shadow: 
+            0 0 0 1px #c9ebf2 inset,
+            0 0 0 2px rgba(255,255,255,0.15) inset,
+            0 0 0 1px rgba(0,0,0,0.4);
+    } 
+  </style>
+</head>
+<body>
+  <div class="btn-container">
+    <button class="btn hello">Hello World!</button>
+  </div>
+</body>
+</html>
