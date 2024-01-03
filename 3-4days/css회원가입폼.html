@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta  http-equiv="x-ua-compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR:wght@300&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="signup.css" rel="stylesheet">
+  <title> css를 입힌 회원가입폼 </title>
+</head>
+<body>
+  <div class="container">
+      <header class="header">
+        <p class="txt-1">Welcome!</p>
+        <p class="txt-2">Create a new account</p>
+      </header>
+      <main class="sign-main">
+        <form action="" method="">
+          <label for="input">
+              <ul>
+                <li> 
+                  <p>EMAIL</p>
+                  <input type="text" id="email" name="input" class="underline"> 
+                </li>
+                <li>
+                  <p>NAME</p>
+                  <input type="text" id="name" name="input" class="underline"> 
+                </li>
+                <li> 
+                  <p>PASSWORD</p>
+                  <input type="password" id="pw" name="input" placeholder="*대소문자,특수문자포함 8자이상" class="underline"> 
+                </li>
+                <li> 
+                  <p>PHONENUMBER</p>
+                  <input type="text" id="phone" name="input" class="underline"> 
+                </li>
+                
+                <li style="display: flex; margin-bottom: 20px; margin-top: 10px; gap:5px;">
+                  <div>
+                    <input type="button" id="phone" name="input" value="인증번호" class="codebtn"> 
+                    <span class="code">000000</span>
+                  </div>
+                  <div style="margin-top: 10px;">
+                    <input type="button" id="phone" name="input" value="확 인" class="codebtn"> 
+                    <span class="completed">3:00</span>
+                  </div>
+                </li>
+
+                <li style="display: flex; margin-bottom: 20px; margin-top: 10px;"> 
+                  <div style="display: flex; justify-content: space-between;">
+                    <select name="" id="" class="city">
+                      <option value="0" selected>choose your city</option>
+                      <option value="sl">서울</option>
+                      <option value="dj">대전</option>
+                      <option value="gj">광주</option>
+                      <option value="bs">부산</option>
+                      <option value="jj">제주</option>
+                    </select>
+                    <div class="radio">
+                      <input type="radio" name="gender" class="gen"> F
+                      <input type="radio" name="gender" class="gen"> M
+                    </div>
+                 </div>
+                </li>
+              </ul>
+          </label>
+          <div class="signup-box">
+            <a class="btn signup">SIGN UP</a>
+          </div>
+        </form>
+        <!-- <div>
+          <div>
+            <p>Social media signup</p>
+            <div>
+              <img>
+            </div>
+          </div>
+        </div> -->
+     </main>
+  <!-- <footer></footer> -->
+</div>
+</body>
+</html>

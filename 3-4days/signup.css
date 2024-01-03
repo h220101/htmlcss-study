@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100vh;
+  font-size: 16px;
+  margin: 0;
+  background-color: #efe9fb;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.container {
+  height: 650px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 7px;
+
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px 60px 60px 60px;
+  box-shadow: 5px 5px 10px  #BEC5D0;
+}
+
+/* header */
+.header {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  align-items: flex-start;
+  font-family: 'Poppins', sans-serif;
+}
+.header .txt-1 {
+  font-size: 35px;
+  color: #5f3da2;
+}
+.header .txt-2 {
+  color: #a48dd1;
+}
+.header > p  {
+  margin: 0;
+}
+
+/* main */
+.sign-main {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.sign-main ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.sign-main ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sign-main ul li > p {
+  font-size: 11px;
+  font-weight: 900;
+  margin: 0;
+}
+.underline {
+  border-width: 0 0 3px;
+  font-size: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #a48dd1;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.underline:focus {
+  outline: none;
+}
+
+.code, .completed, .codebtn {
+  font-size: 11px;
+  font-family: 'Noto Sans KR', sans-serif;
+  cursor: pointer;
+  font-weight: 600;
+}
+.codebtn {
+  border: none;
+  border-radius: 10%;
+  width: 70px;
+  padding: 5px 10px 5px 10px;
+  margin-right: 10px;
+  background-color: #f0ebf8;
+  font-weight: 900;
+  color: #5f3da2;
+  transition: 0.1s;
+}
+.codebtn:active {
+  box-shadow: inset -.3rem -.1rem 1.4rem  #a48dd1, 
+  inset .3rem .4rem .8rem #BEC5D0; 
+}
+
+.city {
+  width: 50%;
+}
+.radio {
+  font-size: 14px;
+}
+
+.signup-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  cursor: pointer;
+}
+
+.btn {
+  flex: 1 1 auto;
+  padding: 10px 30px; 
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 2px;
+}
+.btn:hover {
+  background-position: right center; 
+}
+.btn.signup {
+  background-image: linear-gradient(to right, #efe9fb 0%, #a6c1ee 51%, #a48dd1 100%);
+}
