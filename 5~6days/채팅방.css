@@ -1,0 +1,129 @@
+/*전체*/
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-weight: 16px;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'NanumSquareNeo-Variable';
+}
+.container{
+  /* height: 100%; */
+  height: calc(100% - 150px);
+  display: flex;
+  flex-direction: column;
+  background-color: #cdc5ff;
+}
+
+
+/*스크린*/
+.chat-screen_bar {
+  /* height: calc(100% - 150px); */
+  height: 100%;
+}
+
+
+/*유저정보*/
+.user {
+  background-color: #fff;
+  padding: 16px;
+  width: 100%; 
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.user_column {
+  display: flex;
+  align-items: center;
+}
+.user_pic {
+  width: 50px;
+  height: 50px;
+}
+.user_sub {
+  display: flex;
+  flex-direction: column;
+}
+.user_sub > span {
+  margin-left: 10px;
+}
+.user_nick {
+  margin-top: 2px;
+}
+.user_nick > i {
+  font-size: 10px;
+  opacity: 30%;
+}
+.user_pic .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+.user_count {
+  font-size: 10px;
+  color: gray;
+}
+.user_icons i {
+  opacity: 40%;
+  font-size: 20px;
+  padding: 0 5px 0 5px;
+}
+
+
+
+/*채팅입력창*/
+.chat-form {
+  height: 150px;
+  background-color: #fff;
+}
+.chat-form_msg{
+  width: 100%;
+  height: 60%;
+  border: none;
+  font-size: 14px;
+  padding: 15px;
+  resize: none;
+  display: flex;
+  font-family: 'NanumSquareNeo-Variable';
+}
+.chat-form_field {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.chat-form_field i {
+  opacity: 40%;
+  font-size: 20px;
+  padding: 0 5px 0 5px;
+}
+.chat-form_btn {
+  width: 65px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #8c81d4;
+  font-size: 14px;
+  float: right;
+  font-family: 'NanumSquareNeo-Variable';
+  color: #fff;
+  border: none;
+}
+.chat-form_btn:active {
+  background-color: darkslateblue;
+}
+.chat-form_msg:focus {
+  outline: none;
+}
+
+
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>눈사람</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 16px;
+  }
+  body {
+    height: 100vh;
+    margin: 0;
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex {
+    display: flex;
+  }
+  .snowman-container { 
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .snowman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hat1 {
+    width: 3.5rem;
+    height: 3rem;
+    background-color: #888;
+  }
+  .hat2 {
+    width: 5.5rem;
+    height: 1rem;
+    background-color: #888;
+    z-index: 10;
+  }
+  .face {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: #fff;
+    border-radius: 48%;
+    position: relative;
+    top: -5px;
+  }
+  .eye {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 20;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+  .lip {
+    width: 2rem;
+    height: 1rem;
+    border-radius: 0 0 50% 50%;
+    background-color: #000;
+    position: relative;
+    top: 25px;
+    left: 18px;
+  }
+  .body1 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: #fff;
+    border-radius: 48%;
+    position: relative;
+    top: -85px;
+    z-index: 100;
+  }
+  .body2 {
+    width: 9.5rem;
+    height: 9.25rem;
+    background-color: #fff;
+    border-radius: 48%;
+    position: relative;
+    top: -90px;
+  }
+  .dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0.5rem;
+    top: 35px;
+    left: 45px;
+  }
+  .arm {
+    display: flex ;
+    width: 9.5rem;
+    justify-content: space-between;
+  }
+  .arm1, .arm2 {
+    background-color: saddlebrown;
+    width: 0.2rem;
+    height: 5rem;
+  }
+  .arm1 {
+    transform: rotate(-50deg);
+  }
+  .arm2 {
+    transform: rotate(50deg);
+  }
+</style>
+<body>
+  <div class="snowman-container">
+    <div class="snowman">
+      <div class="hat1"></div>
+      <div class="hat2"></div>
+      <div class="face">
+        <div class="eye"></div>
+        <div class="eye"></div>
+        <div class="lip"></div>
+      </div>
+      <div class="arm">
+        <div class="arm1"></div>
+        <div class="arm2"></div>
+      </div>
+      <div class="body1">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+      </div>
+      <div class="body2"></div>
+    </div>
+  </div>  
+</body>
+</html>

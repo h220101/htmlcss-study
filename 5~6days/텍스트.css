@@ -1,0 +1,50 @@
+.chat-screen_texts {
+  padding: 0;
+  list-style-type: none; 
+  height: calc(100% - 150px);
+  font-size: 12px;
+  overflow: auto;
+}
+.chat-screen_texts::-webkit-scrollbar {
+  width: 0.5em; 
+}
+.chat-screen_texts::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #fff; 
+}
+.chat-screen_texts::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+.chat-screen_texts > .text {
+  background-color: bisque;
+  width: 280px;
+  height: 50px;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  line-height: 30px;
+  /*
+    높이 50에 패딩 위-아래 10씩, 남는것은 30. 그래서 
+    패딩 외에 남는 만큼을 라인하이트가 가져가게 했다. 
+    따라서 가운데에 위치하도록 유도함.
+  */
+  position: relative;
+  left: 20px;
+}
+.chat-screen_texts > .text::after {
+  content: "";
+  border-right: 16px solid bisque;
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+.chat-screen_texts > .text:hover {
+  background-color: burlywood;
+  transition: background-color 0.5s ease-in;
+}
+.chat-screen_texts > .text:hover::after {
+  border-right: 16px solid burlywood;
+  transition: border-right 0.5s ease-in;
+}
