@@ -22,7 +22,6 @@ body {
 
 /*스크린*/
 .chat-screen_bar {
-  /* height: calc(100% - 150px); */
   height: 100%;
 }
 
