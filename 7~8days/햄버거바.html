@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta  http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Hahmlet:wght@100;400&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@21,400,0,0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  rel="stylesheet">
+    <title>햄버거바</title>
+    <style>
+       * {
+          box-sizing: border-box;
+          font-family: 'Noto Sans KR', sans-serif;
+        }
+        html {
+          font-size: 16px;
+        }
+        body {
+          margin: 0;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style-type: none;
+        }
+        .flex {
+          display: flex;
+        }
+        .header {
+          width: 100%;
+          background-color: aliceblue;
+        }
+        .header-inner {
+          width: 100%;
+          height: 4rem; 
+          padding: 0.75rem 1rem;
+          max-width: 75rem;
+          margin: auto;
+          justify-content: center;
+          color: #444;
+        }
+        .header-logo {
+          width: 100%;
+          color: #7fdca4;
+          font-size: 1.5rem;
+          font-weight: 600;
+          font-family: 'Gowun Dodum', sans-serif;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          line-height: 40px;
+          cursor: pointer;
+          padding-top: 11px;
+        }
+        .header-nav {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .header-nav > li {
+          margin: 2px;
+          display: flex;
+          padding: 10px;
+        }
+        .header-nav > li:hover {
+          color: #000;
+          font-weight: 800;
+        }
+        .header-nav .icon {
+          display: none;
+        }
+
+      @media screen and (max-width: 550px) {
+        .header-nav {
+          display: flex;
+          flex-direction: column;
+        }
+        .header-nav > li:not(.icon) {
+          display: none;
+        }
+        .header-nav:hover > li:not(.icon) {
+          display: flex;
+        }
+        .header-nav .icon {
+          cursor: pointer;
+          display: block;
+          padding: 12px 10px 0 0 ;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+        .header-nav:not(:hover) .icon ~ li {
+          display:  none;
+        }
+        .header-logo {
+          padding: 5px 0 5px 0;
+        }
+     }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-logo">🥬배추마켓</div>
+      <ul class="header-nav">
+        <i class="fas fa-bars icon" style="font-size: 25px; "></i>
+        <li>중고거래</li>
+        <li>동네가게</li>
+        <li>알바</li>
+        <li>부동산 직거래</li>
+        <li>중고차 직거래</li>
+      </ul>
+  </header>
+</body>
+</html>
