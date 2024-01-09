@@ -78,9 +78,9 @@
   font-weight: 600;
 }
 .notice-content-address {
-  padding: 20px 0 7px 0;
+  padding: 20px 0 10px 0;
   line-height: 1.4;
-  font-size: 15px;
+  font-size: 14.5px;
   color: #bbb;
 }
 
@@ -91,15 +91,16 @@
   justify-content: space-between;
 }
 .notice-content-pay{
-  font-size: 14px;
+  font-size: 13px;
 }
 .notice-content-pay2 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #25c1ff;
 }
 .notice-content-point {
-  font-size: 14px;
+  padding-top: 4px ;
+  font-size: 13px;
   color: #666;
 }
 .notice-content-point2 {
