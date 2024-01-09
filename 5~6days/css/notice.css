@@ -1,0 +1,268 @@
+.notice {
+  max-width: 1440px;
+  margin: auto;
+  height: 100%;
+}
+.notice-tit-box {
+  margin: 10px 0 10px;
+  padding: 15px 0 12px 0;
+  position: relative;
+}
+.notice-tit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.notice-tit-inner {
+  height: 100%;
+  display: flex;
+}
+.notice-tit-box div {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+.notice-tit-box i {
+  padding-left: 10px;
+  font-size: 25px;
+  opacity: 40%;
+}
+
+
+
+.notice-container {
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+.notice-item {
+  width: 100%;
+  height: 180px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+.notice-item-inner {
+  padding-bottom: 10px;
+  box-sizing: border-box; 
+  align-items: center;
+  justify-content: center;
+}
+.notice-thumb {
+  width: 120px; 
+  height: 120px; 
+  align-items: center;
+  justify-content: center;
+}
+.notice-thumb > img {
+  width: 90px;
+  height: 60px;
+}
+
+
+.notice-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 1rem 0 1rem;
+}
+.notice-content-tit {
+  line-height: 1.32;
+  font-size: 17px;
+  font-weight: 600;
+}
+.notice-content-address {
+  padding: 20px 0 7px 0;
+  line-height: 1.4;
+  font-size: 15px;
+  color: #bbb;
+}
+
+
+.pay, .point {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notice-content-pay{
+  font-size: 14px;
+}
+.notice-content-pay2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #25c1ff;
+}
+.notice-content-point {
+  font-size: 14px;
+  color: #666;
+}
+.notice-content-point2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+
+
+.plus {
+  align-items: center;
+  justify-content: space-between;
+}
+.plus .txt2  {
+  font-size: 14px;
+  padding-left: 6px;
+}
+.plus i {
+  opacity: 50%;
+}
+.num {
+  font-size: 14px;
+  align-items: center;
+}
+.num2 {
+  padding: 2px 0 0 3px;
+  font-size: 14px;
+}
+
+
+.notice-tit-menu {
+  align-items: center;
+  justify-content: center;
+  margin: 70px 0 30px;
+}
+.notice-tit-menu .menulist p {
+  padding: 0 10px 0 10px;
+} 
+
+
+/*추천 갤럭시*/
+.notice2-container {
+  width: 100%;
+  flex-direction: column;
+}
+.notice2-item {
+  justify-content: center;
+}
+.notice2-item-inner > img {
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.notice3-item {
+  justify-content: center;
+}
+.notice3-item-inner  {
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.item-inner-tit {
+  margin: 0;
+  font-size: 28px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 60px;
+  z-index: 50;
+}
+.item-inner {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 110px;
+  z-index: 50;
+}
+.item-inner .item-menulist > p {
+  margin: 0;
+  padding: 0 20px 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.item-inner-sub {
+  z-index: 88;
+  position: absolute;
+  top: 300px;
+}
+.item-inner-tit2  {
+  margin: 0;
+  font-size: 48px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 580px;
+  z-index: 50;
+}
+.item-inner-tit3  {
+  margin: 0;
+  font-size: 20px;
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+}
+.item-inner-tit4  {
+  margin: 0;
+  font-size: 20px;
+  position: absolute;
+  top: 680px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+}
+.notice3-item-inner button {
+  color: #fff;
+  margin: 1.5rem 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0.3rem 1.5rem;
+  line-height: 1.8rem;
+  background-color: #000;
+  border: none;
+  border-radius: 1.6rem;
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 710px;
+}
+.notice3-item-inner button:hover {
+  background-color: #333;
+  transition: background-color 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .notice {
+    padding: 0 1rem 1.25rem;
+  }
+  .notice-tit {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 2.5rem 0 1.5rem;
+  }
+  .notice-container {
+    display: block;
+  }
+}

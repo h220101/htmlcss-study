@@ -1,0 +1,145 @@
+.preview {
+  background-color: #006FF2;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: .95rem;;
+}
+
+
+#header {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.header-inner {
+  padding-top: 1rem;
+  max-width: 90rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-inner-logo {
+  display: flex;
+  align-items: center;
+}
+
+
+.header-inner-input {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  margin: 0 10px 0 20px;
+}
+.cart, .mypage {
+  margin-left: 18px;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+}
+.searchbar input {
+  width: 330px;
+  height: 40px;
+  border-radius: 60px;
+  background-color: #f2f3f6;
+  padding: 7px 14px 7px 14px;
+  border: none;
+  font-size: 0.9rem;
+  outline: none;
+}
+.finder {
+  position: absolute;
+  right: 155px;
+}
+.header-inner-input .search:focus {
+  outline: none;
+}
+
+
+.header-inner-menu {
+  width: 100%;
+  height: 100%;
+}
+.header-inner-menu .menulist {
+  font-size: 14px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px 0 5px;
+} 
+.menulist div {
+  display: flex;
+  align-items: center;
+}
+.menulist p {
+  margin: 0;
+  width: auto;
+}
+.menulist p:not(:first-child) {
+  margin: 0 10px;
+}
+.menulist p:last-child {
+ margin: 0 0 0 10px;
+}
+.menulist p:hover {
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 15px ;
+}
+.menulist span {
+  margin: 0 10px 0 5px;
+}
+.header-content-nav ul li:hover{
+  color: #999;
+}
+.header-content-nav ul li.active{
+  color: #90daad;
+}
+
+
+
+
+/* media */
+@media screen and (max-width: 768px) { 
+  .finder {
+    position: absolute;
+    right: 70px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .header-inner {
+    padding: 0 1rem 0 1rem;
+  }
+  .searchbar, .header-inner-menu {
+    display: none;
+  }
+  .mypage {
+    display: none;
+  }
+  .cart, .finder {
+    display: block;
+  }
+}
+@media screen and (max-width: 946px) {
+  .header-inner-input .chat, 
+  .header-inner-menu ul {
+    display: none;
+  }
+  .header-inner-input .menu  {
+    display: block;
+  }
+  .finder {
+    position: absolute;
+    right: 70px;
+  }
+}
+

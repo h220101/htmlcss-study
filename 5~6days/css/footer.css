@@ -1,0 +1,116 @@
+.footer {
+  color: #666;
+  padding: 0 1rem; /*제일 바깥 : 패딩값*/
+  width: 100%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.footer-container{
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto; 
+}
+
+
+
+.footer-appdown {
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.4;
+  padding-bottom: 0.5rem;
+}
+.footer-appbtn { 
+  width: 18.75rem;
+  justify-content: space-between;
+}
+.footer-appicon {
+  display: flex;
+  width: 18.75rem;
+}
+.footer-appicon .icon {
+  width: 24px;
+  height: 24px;
+  opacity: 45%;
+  margin-right: 1rem;
+}
+.language {
+  display: flex;
+  margin-left: 1rem;
+}
+.language-txt {
+  width: 5rem;
+  border: none;
+}
+.footer-appbtn button {
+  width: 48%;
+  height: 2.75rem;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 33%;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-size: 0.875rem;
+  border-left: 1px solid #ddd;
+}
+.footer-nav:last-child {
+  border-right: 1px solid #ddd;
+}
+.footer-nav ul li {
+  margin-bottom: 1rem;
+}
+.footer-nav ul li h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  line-height: 23px;
+}
+
+
+.footer-info {
+  width: 100%;
+  color: #888;
+  font-size: 0.813rem;
+  line-height: 1.5;
+  padding: 30px 20px;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .footer-apps {
+    display: flex;
+    align-items: center;
+    float: none;
+    margin-bottom: 1.25rem;
+  }
+  .footer-appdown {
+    padding-bottom: 0;
+  }
+  .footer-appbtn {
+    justify-content: flex-start;
+  }
+  .footer-appbtn button {
+    font-size: 0.775rem;
+    appearance: none;
+    background-color: #fff;
+    width: 35%;
+    height: 1.5rem;
+    margin-left: 1rem;
+  }
+}
