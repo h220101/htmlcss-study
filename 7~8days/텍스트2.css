@@ -1,0 +1,83 @@
+.chat-screen_texts > .text-right {
+  background-color: #d2ffe3;
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 30px;
+  position: relative;
+  display: block;
+  left: calc(100% - 300px);
+}
+.chat-screen_texts > .text-right::after {
+  content: "";
+  border-right: 16px solid #d2ffe3;
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  transform: rotate(140deg);
+  top: 6px;
+  left: 273px;
+}
+.chat-screen_texts > .text-left {
+  background-color: bisque;
+  width: 280px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 30px;
+  position: relative;
+  left: 20px;
+}
+.chat-screen_texts > .text-left::before {
+  content:"";
+  border-right: 16px solid bisque;
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  top: 7px;
+  left: -10px;
+}
+.chat-screen_texts {
+  padding: 0;
+  list-style-type: none; 
+  height: calc(100% - 150px);
+  font-size: 12px;
+  overflow: auto;
+}
+.chat-screen_texts > .text-left:hover {
+  background-color: burlywood;
+  transition: background-color 0.2s ease-in;
+}
+.chat-screen_texts > .text-left:hover::before {
+  border-right: 16px solid burlywood;
+  transition: border-right 0.2s ease-in;
+}
+.chat-screen_texts > .text-right:hover {
+  background-color: #add1ba;
+  transition: background-color 0.2s ease-in;
+}
+.chat-screen_texts > .text-right:hover::after {
+  border-right: 16px solid #add1ba;
+  transition: border-right 0.2s ease-in;
+}
+.chat-screen_texts::-webkit-scrollbar {
+  width: 0.5em; 
+}
+.chat-screen_texts::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #fff; 
+}
+.chat-screen_texts::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+
+@media screen and (max-width: 310px) {
+  .chat-screen_texts {
+    overflow-x: hidden;    
+    overflow-y: hidden;
+  }
+}
